@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  color: #fff;
+  background-image: url("../images/back-img.jpg");
+  /*background-color: #61122f;*/
+  font-family: 'Oxygen', sans-serif;
+  background-attachment: fixed;
+  margin-top:0;
+}
+li a:hover:not(.active){
+background-color:#61122f;
+}
+.active{
+background-color:green;
+}	
+li{
+  float: left;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  background-color:#333;
+  /*position:fixed;*/
+  top:0;
+  width: 100%;
+}
+.brand{
+  width: 100px;
+  height: 100px;
+  margin: 10px 15px 10px 0;
+  float: right;
+}
+li a{
+  display: block;
+  background-color: green;
+  border: 1px solid maroon;
+  padding:15px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  text-align:center;
+}
+/*#logo-img {
+  background-image: url('../images/logohead.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 0px 0px 5px 0;
+}*/
+.navbar-brand {
+  padding-top: 10px;
+  background-color: #f6b319;
+  padding-bottom: 15px;
+}
+.navbar-brand h1 {  
+  font-family: 'Lora', serif;
+  color: blue;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  margin-left: -20px;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand a img{
+  width: 60px;
+  height: 55px;
+  float:right;
+  margin-top:-40px;
+  margin-right:10px;
+  border:2px solid purple;
+}
+/*#d3{
+  padding:20px;
+  margin-top: 30px;
+  height: auto;
+}*/
+h1{
+color:#06eb26;
+text-align: center;
+font-family: sans-serif;
+margin-top: 20px;
+width: 100%;
+}
+#p1{
+  color:blueviolet;
+  font-size: 20px;
+  margin-top: 10px;
+  position: relative;
+  overflow: auto;
+  text-align: center;
+}
+body{
+font-family:Arial,Helvetica,sans-serif;
+}
+form{
+border:3px solid maroon;
+background-color: #61122f;
+margin-left:390px;
+margin-right:410px;
+margin-top:80px;
+padding-bottom:100px;
+padding-bottom: 10px;
+}
+input[type=text],input[type=password]{
+width:100%;
+padding:10px 30px;
+margin:8px 0px;
+display:inline-block;
+border:1px solid #ccc;
+box-sizing:border-box;
+}
+button{
+background-color:#4CAF50;
+color:white;
+padding:14px 20px;
+margin:8px 0;
+border:none;
+cursor:pointer;
+width:100%;
+}
+button:hover{
+opacity:0.8;
+}
+.cancelbtn{
+width:auto;
+padding:10px 18px;
+background-color:#f44336;
+}
+.imgcontainer{
+text-align:center;
+}
+.img.avatar{
+width:40%;
+border-radius:50%;
+}
+.container{
+padding:10px;
+margin: 10px;
+}
+span.psw{
+float:right;
+padding-top:16px;
+}
+@media screen and(max-width:300px)
+{
+span.psw{
+display:block;
+float:none;
+}
+.cancelbtn
+width:100%;
+}
+}
+/*Web Footer*/
+#d{
+  background-color: #222;
+}
+.web_footer{
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+  padding:10px;
+  margin-bottom:10px;
+}
+.web-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+    margin:30px;
+  }
+.web-footer section hr {
+    width: 50%;
+  }
+  @media (max-width: 767px) {
+  form{
+    border: 3px solid maroon;
+    background-color: #61122f;
+    margin-top: 80px;
+    padding-bottom: 100px;
+    padding-bottom: 10px;
+    width: 80%;
+    margin-left: 35px;
+  }
+    .navbar-brand h1 {  
+  font-family: 'Lora', serif;
+  color: blue;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 60px;
+  margin-bottom: 0;
+  line-height: .75;
+  margin-left: 0px;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+  form{
+    border: 3px solid maroon;
+    background-color: #61122f;
+    margin-top: 80px;
+    padding-bottom: 100px;
+    padding-bottom: 10px;
+    width: 80%;
+    margin-left: 35px;
+  }
+    .navbar-brand h1 {  
+  font-family: 'Lora', serif;
+  color: blue;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  margin-left: 0px;
+}
+}
