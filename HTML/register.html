@@ -1,42 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Registration form</title>
-	<link rel="stylesheet" type="text/css" href="../CSS/register.css">
+	  <title>Registration form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="../CSS/register.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<header>
-    <nav id="header-nav">
-		<ul>
-		    <li><a class="active" href="../p1.html">Home</a></li>
-            <li><a href="#0.1_news">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#0.1_faq">FAQ</a></li>
-            <li><a href="../p1.html">Login</a></li>
-            <li><a href="register.html">New User</a></li>            
-        </ul>
-      </nav>
-    </header> <br><br><br>  
-<h1><ins>Registration Form</ins></h1>
+  <header>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            
+            </button>
+            <a class="navbar-brand" href="../p1.html">CODE GENIUS</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="../p1.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li><a href="#0.1_news">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#0.1_faq">FAQ</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="register.html" target="_self"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="../p1.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav> 
+    </header> 
 <form>
-	<div class="container">
-	<label><b>Firstname:</b></label><input type="text" placeholder="Firstname" required>
-	<label><b>Lastname:</b></label><input type="text" placeholder="Lastname" required>
-	<label><b>E-mail:</b></label><input type="email" placeholder="E-mail" required>
-	<label><b>Age:</b></label><input type="age" placeholder="Age" required>
-	<label><b>Password:</b></label><input type="password" placeholder="Password" required>
-	<label><b>Confirm Password:</b></label><input type="password" placeholder="Confirm Password" required><br>
-	<div>
+  <div class="container">
+	<div class="form-group">
+  <legend style="text-shadow: blue;text-align: center;">Registration Form</legend>
+	<label for="text"><b>Firstname:</b></label><input type="text" class="form-control" placeholder="Firstname" required>
+	<label for="text"><b>Lastname:</b></label><input type="text" class="form-control" placeholder="Lastname" required>
+	<label for="email"><b>E-mail:</b></label><input type="email" class="form-control" placeholder="E-mail" required>
+	<label for="age"><b>Age:</b></label><input type="age" class="form-control" placeholder="Age" required>
+	<label for="pwd"><b>Password:</b></label><input type="password" class="form-control" placeholder="Password" required>
+	<label for="pwd"><b>Confirm Password:</b></label><input type="password" class="form-control" placeholder="Confirm Password" required><br>
+	<div class="form-group">
 	<label><b>Gender:</b></label>
-	<input type="radio" name="gender" value="male">Male
-	<input type="radio" name="gender" value="female">Female
-	<input type="radio" name="gender" value="other">Other
+	<label class="radio-inline"><b><input type="radio" name="optradio" value="male">Male</label></b></label>
+	<label class="radio-inline"><b><input type="radio" name="optradio" value="female">Female</b></label>
+	<label class="radio-inline"><b><input type="radio" name="optradio" value="other">Other</b></label>
 	</div><br>
-	<button class="button"><span>Submit</span></button>
+	<button class="submit"><span>Submit</span></button>
 	<button class="reset"><span>Reset</span></button>
     </div>
+  </div>
     </form><br><br>
  <div id="d">
     <footer class="web_footer">
@@ -46,11 +68,14 @@
           CGPIT,UTU<br>
           Bardoli,Surat
           <p>*Test Your Knowledge*</p>
+          <span id="logo_img"><a><img src="../images/logohead.png"></a></span>
           <hr>
       </section>
     </div>
-  <div class="text-center">&copy; Copyright CODE GENIUS SITE</div>
+  <div class="text-center">&copy; Copyright CODE GENIUS SITE by Bhavesh, Dharil, Ishika and Shreya</div>
   </footer>
 </div>
+  <script src="JS/jquery-3.5.1.min.js"></script>
+  <script src="JS/bootstrap.min.js"></script>
 </body>
 </html>
