@@ -126,6 +126,7 @@ text-align: center;
 font-family: sans-serif;
 margin-top: 20px;
 width: 100%;
+text-shadow: black;
 }
 #p1{
   color:blueviolet;
@@ -166,6 +167,7 @@ margin:8px 0;
 border:none;
 cursor:pointer;
 width:100%;
+border-radius: 10px;
 }
 #b1:hover{
 opacity:0.8;
@@ -311,16 +313,93 @@ width:100%;
   width:80%;
   }
 } 
-  @media (min-width: 992px) and (max-width:1199px){
- form{
-   width:80%;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 992px) and (max-width:1199px){
   form{
-    width:80%;
+width:80%;
+border:3px solid maroon;
+background-color: #61122f;
+margin-left:300px;
+margin-right:300px;
+margin-top:80px;
+padding-top:10px;
+padding-bottom: 10px;
+padding-right: 10px;
+padding-left: 10px;
+border-radius: 10px;
+}
+   #animation1{
+  display: block;
+}
+#animation2{
+  display: block;
+}
+  @keyframes code {
+  0% {background-image:url("../images/html.jpg"); left: 50px;top: 200px;border-color: purple}
+  25% {background-image:url("../images/js.jpg"); left: 50px;top: 350px;border-color: blue}
+  50% {background-image:url("../images/c.jpg"); left: 50px;top: 450px;border-color: yellow}
+  75% {background-image:url("../images/java.jpg"); left: 50px;top: 600px;border-color:green}
+  100% {background-image:url("../images/html.jpg"); left: 50px;top: 200px;border-color: purple}
+}
+@keyframes codes {
+  0% {background-image:url("../images/css.jpg"); right: 50px;top: 200px;border-color: purple}
+  25% {background-image:url("../images/php.jpg"); right: 50px;top: 350px;border-color: blue}
+  50% {background-image:url("../images/c++.jpg"); right: 50px;top: 450px;border-color: yellow}
+  75% {background-image:url("../images/python.jpg"); right: 50px;top: 600px;border-color: green}
+  100% {background-image:url("../images/css.jpg"); right: 50px;top: 200px;border-color: purple}
+}
+}
+@media (min-width: 901px) and (max-width: 991px){
+  form{
+    width:50%;
+    margin-left: 235px;
   }
+   #animation1{
+  display: block;
+}
+#animation2{
+  display: block;
+}
+@keyframes code {
+  0% {background-image:url("../images/html.jpg"); left: 40px;top: 200px;border-color: purple}
+  25% {background-image:url("../images/js.jpg"); left: 40px;top: 350px;border-color: blue}
+  50% {background-image:url("../images/c.jpg"); left: 40px;top: 450px;border-color: yellow}
+  75% {background-image:url("../images/java.jpg"); left: 40px;top: 600px;border-color:green}
+  100% {background-image:url("../images/html.jpg"); left: 40px;top: 200px;border-color: purple}
+}
+@keyframes codes {
+  0% {background-image:url("../images/css.jpg"); right: 40px;top: 200px;border-color: purple}
+  25% {background-image:url("../images/php.jpg"); right: 40px;top: 350px;border-color: blue}
+  50% {background-image:url("../images/c++.jpg"); right: 40px;top: 450px;border-color: yellow}
+  75% {background-image:url("../images/python.jpg"); right: 40px;top: 600px;border-color: green}
+  100% {background-image:url("../images/css.jpg"); right: 40px;top: 200px;border-color: purple}
+}
+}
+@media (min-width: 768px) and (max-width: 900px){
+  form{
+    width:46%;
+    margin-left: 228px;
 
+  }
+   #animation1{
+  display: block;
+}
+#animation2{
+  display: block;
+}
+@keyframes code {
+  0% {background-image:url("../images/html.jpg"); left: 40px;top: 200px;border-color: purple}
+  25% {background-image:url("../images/js.jpg"); left: 40px;top: 350px;border-color: blue}
+  50% {background-image:url("../images/c.jpg"); left: 40px;top: 450px;border-color: yellow}
+  75% {background-image:url("../images/java.jpg"); left: 40px;top: 600px;border-color:green}
+  100% {background-image:url("../images/html.jpg"); left: 40px;top: 200px;border-color: purple}
+}
+@keyframes codes {
+  0% {background-image:url("../images/css.jpg"); right: 30px;top: 200px;border-color: purple}
+  25% {background-image:url("../images/php.jpg"); right: 30px;top: 350px;border-color: blue}
+  50% {background-image:url("../images/c++.jpg"); right: 30px;top: 450px;border-color: yellow}
+  75% {background-image:url("../images/python.jpg"); right: 30px;top: 600px;border-color: green}
+  100% {background-image:url("../images/css.jpg"); right: 30px;top: 200px;border-color: purple}
+}
 }
 @media (max-width: 767px){
   #animation1{
@@ -330,7 +409,8 @@ width:100%;
   display: none;
 }
   form{
-    width:80%;
+    width:60%;
+    margin-left: 20px;
   }
 }
 @media (max-width: 479px) {
