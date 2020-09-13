@@ -52,7 +52,7 @@ p.box{
 	display: flex;
 	justify-content:center;
 	align-items: center;
-	margin:30px;
+	margin:20px;
 	/*border-radius: 50px;*/
 	background:#060c21;
 	/*margin-bottom:-1320px;
@@ -240,11 +240,15 @@ p.box{
 	margin-top:100px;
 }
 #img{
-	margin-top:-170px;
+	margin-top:-180px;
 	margin-left:270px;
 	position:absolute;
 	border-radius:50%;
 }
+.button{
+		margin-left: 270px;
+		margin-top: 50px;
+	}
  }
 @media (min-width: 768px) and (max-width: 991px){
 	.box {
@@ -278,7 +282,7 @@ p.box{
 @media (max-width: 767px) {
 	.box {
 		float: left;
-		width: 90%;
+		width: 100%;
 		margin-right:20px;
 		margin-top: 10px;
 	}
@@ -295,8 +299,59 @@ p.box{
 	margin-top:100px;
 }
 #img{
-	margin-top:-150px;
-	margin-left:100px;
+	margin-top:-140px;
+	margin-left:60px;
+	border-radius:50%;
+}
+}
+@media(min-width: 541px) and (max-width:766px){
+	.box {
+		float: left;
+		width: 95%;
+		margin-right: 10px;
+		margin-top: 10px;
+	}
+	.button{
+		margin-left: 55px;
+		margin-top: 5px;
+	}
+	.box .content{
+	position: absolute;
+	padding:10px;
+	box-sizing:border-box;
+	color:#fff;
+	font-size:15px;
+	margin-top:100px;
+}
+#img{
+	margin-top:-160px;
+	margin-left:35px;
+	position:absolute;
+	border-radius:50%;
+}
+}
+@media (min-height: 480px) and (max-width: 540px){
+	.box {
+		float: left;
+		width: 95%;
+		margin-right: 10px;
+		margin-top: 10px;
+	}
+	.button{
+		margin-left: 55px;
+		margin-top: 0px;
+	}
+	.box .content{
+	position: absolute;
+	padding:10px;
+	box-sizing:border-box;
+	color:#fff;
+	font-size:15px;
+	margin-top:100px;
+}
+#img{
+	margin-top:-160px;
+	margin-left:35px;
 	position:absolute;
 	border-radius:50%;
 }
@@ -327,28 +382,54 @@ p.box{
 	border-radius:50%;
 }
 }
-@media (max-width: 300px){
+@media (min-width: 300px) and (max-width: 442px){
 	.box {
 		float: left;
 		width: 100%;
-		margin-right:20px;
+		margin-right: 10px;
 		margin-top: 10px;
 	}
 	.button{
-		margin-left: 100px;
-		margin-top: 30px;
+		margin-left: 55px;
+		margin-top: 10px;
 	}
 	.box .content{
 	position: absolute;
-	padding:20px;
+	padding:10px;
 	box-sizing:border-box;
 	color:#fff;
-	font-size:25px;
+	font-size:20px;
 	margin-top:100px;
 }
 #img{
-	margin-top:-120px;
-	margin-left:40px;
+	margin-top:-160px;
+	margin-left:35px;
+	position:absolute;
+	border-radius:50%;
+}
+}
+@media(max-width: 280px){
+	.box {
+		float: left;
+		width: 95%;
+		margin-right: 10px;
+		margin-top: 10px;
+	}
+	.button{
+		margin-left: 55px;
+		margin-top: 10px;
+	}
+	.box .content{
+	position: absolute;
+	padding:10px;
+	box-sizing:border-box;
+	color:#fff;
+	font-size:20px;
+	margin-top:100px;
+}
+#img{
+	margin-top:-160px;
+	margin-left:35px;
 	position:absolute;
 	border-radius:50%;
 }

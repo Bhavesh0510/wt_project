@@ -6,7 +6,7 @@ body{
 	background-size:cover;
 }
 h1{
-	font-size:40px;
+	font-size:30px;
 }
 .button1{
 			width:100px;
@@ -95,3 +95,6 @@ h1{
 	background:#007bb5;
 	color:white;
 }
+@media (max-width: 479px){}
+@media (min-width: 300px) and (max-width: 442px){}
+@media(max-width: 280px){}
