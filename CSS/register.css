@@ -217,6 +217,21 @@ b{
 .web-footer section hr {
     width: 50%;
   }
+ @media (min-width: 1200px){
+ 	#l1{
+	margin-left:200px; 
+}
+}
+@media (min-width: 992px) and (max-width:1199px){
+	#l1{
+	margin-left:200px; 
+}
+}
+@media (min-width: 901px) and (max-width: 991px){
+    #l1{
+	margin-left:200px; 
+}
+ }
   @media (max-width: 767px) {
   	form{
 	width:100%;
@@ -225,7 +240,6 @@ b{
 	margin-bottom:-40px;
 	box-sizing:border-box;
 }
-  
 }
 @media (min-width: 768px) and (max-width: 991px){
 	form{
@@ -235,8 +249,10 @@ b{
 	margin-bottom:-40px;
 	box-sizing:border-box;
 }
- 
-}s
+#l1{
+	margin-left:100px; 
+}
+}
 @media (max-width: 479px) {
 	form{
     border: 3px solid maroon;
@@ -248,6 +264,35 @@ b{
     margin-left: 20px;
     border-radius: 10px;
   }
+}
+@media (min-width: 479px) and (max-width:486px){
+    .reset{
+	border-radius:4px;
+	background-color:#f4511e;
+	border:none;
+	color:#FFFFFF;
+	text-align:center;
+	font-size:28px;
+	padding:5px;
+	width:150px;
+	transition:all 0.5s;
+	cursor:pointer;
+	margin:5px;
+}
+.submit{
+	border-radius:4px;
+	background-color:#f4511e;
+	border:none;
+	color:#FFFFFF;
+	text-align:center;
+	font-size:28px;
+	padding:5px;
+	width:150px;
+	transition:all 0.5s;
+	cursor:pointer;
+	margin-top:10px;
+	margin-left:90px;
+}
 }
 @media (max-width: 767px){
 	form{
