@@ -39,24 +39,24 @@
     </div>
     </nav> 
     </header> 
-<form>
+<form name="myform" onsubmit="return(validateform())">
   <div class="container">
 	<div class="form-group">
   <legend style="text-shadow: blue;text-align: center;">Registration Form</legend>
-	<label for="text"><b>Firstname:</b></label><input type="text" class="form-control" placeholder="Firstname" required>
-	<label for="text"><b>Lastname:</b></label><input type="text" class="form-control" placeholder="Lastname" required>
-	<label for="email"><b>E-mail:</b></label><input type="email" class="form-control" placeholder="E-mail" required>
-	<label for="age"><b>Age:</b></label><input type="age" class="form-control" placeholder="Age" required>
-	<label for="pwd"><b>Password:</b></label><input type="password" class="form-control" placeholder="Password" required>
-	<label for="pwd"><b>Confirm Password:</b></label><input type="password" class="form-control" placeholder="Confirm Password" required><br>
+	<label for="text"><b>Firstname:</b></label><input type="text" class="form-control" name="fname" placeholder="Firstname" required>
+	<label for="text"><b>Lastname:</b></label><input type="text" class="form-control" name="lname" placeholder="Lastname" required>
+	<label for="email"><b>E-mail:</b></label><input type="email" class="form-control" name="email" placeholder="E-mail" required>
+	<label for="age"><b>Age:</b></label><input type="age" class="form-control" name="age" placeholder="Age" required>
+	<label for="pwd"><b>Password:</b></label><input type="password" class="form-control" name="password" placeholder="Password" required>
+	<label for="pwd"><b>Confirm Password:</b></label><input type="password" class="form-control" name="confirmpassword" placeholder="Confirm Password" required><br>
 	<div class="form-group">
 	<label><b>Gender:</b></label>
 	<label id="l1" class="radio-inline"><b><input type="radio" name="optradio" value="male">Male</label></b></label>
 	<label class="radio-inline"><b><input type="radio" name="optradio" value="female">Female</b></label>
 	<label class="radio-inline"><b><input type="radio" name="optradio" value="other">Other</b></label>
 	</div><br>
-	<button class="submit"><span>Submit</span></button>
-	<button class="reset"><span>Reset</span></button>
+	<button type="submit" class="submit" value="ok"><span>Submit</span></button>
+	<button type="reset" class="reset" value="reset"><span>Reset</span></button>
     </div>
   </div>
     </form><br><br>
@@ -77,5 +77,109 @@
 </div>
   <script src="JS/jquery-3.5.1.min.js"></script>
   <script src="JS/bootstrap.min.js"></script>
+<script>
+  function validateform(){  
+
+  var name = /^[A-Za-z ]+$/;
+
+  var fname=document.myform.fname.value; 
+  var lname=document.myform.lname.value;
+  var email=document.myform.email.value;
+  var age=document.myform.age.value; 
+  var password=document.myform.password.value;
+  var confirmpassword=document.myform.confirmpassword.value;  
+  
+if (fname==null || fname=="")
+{  
+  alert("Please enter your First Name!"); 
+  document.myform.fname.focus();
+
+  return false;  
+}
+
+else if(!name.test(fname)){
+    alert("First Name has to be alphabets!");
+    document.myform.fname.focus();
+    
+    return false;
+   }
+
+else if(lname==null || lname=="")
+{
+  alert("Please enter your Last Name!");
+  document.myform.lname.focus();
+     
+  return false;
+}
+
+else if(!name.test(lname)){
+    alert("Last Name has to be alphabets!");
+    document.myform.lname.focus();
+    
+    return false;
+   }
+
+else if(email==null || email=="")
+{
+  alert("Please enter your Email!");
+  document.myform.email.focus();
+
+  return false;
+}
+
+else if(age==null || age=="")
+{
+  alert("Please Enter Your age!");
+  document.myform.age.focus();
+   
+  return false;
+}
+else if(isNaN(age))
+   {
+     alert("Enter Age in numbers!");
+     document.myform.age.focus();
+     
+     return false;
+   }
+
+else if(password==null || password==""){  
+  alert("Please enter your password!"); 
+  document.myform.password.focus();
+
+  return false;
+  }
+
+else if(password.length<6){  
+  alert("Password must be at least 6 characters long!"); 
+  document.myform.password.focus();
+
+  return false;
+  }
+
+else if(confirmpassword==null || confirmpassword==""){  
+  alert("Please enter your password again for confirmation!"); 
+  document.myform.confirmpassword.focus();
+
+  return false;
+  }
+
+else if(password!=confirmpassword)
+{
+  alert("Sorry! Your Password is not matching!");
+  document.myform.confirmpassword.focus();
+   
+  return false;
+  }
+
+else if(document.myform.optradio[0].checked == false && document.myform.optradio[1].checked == false && document.myform.optradio[2].checked == false){
+    alert("Select gender!");
+    document.myform.optradio[0].focus();
+
+    return false;
+  }
+      return(true);
+}
+
+</script>
 </body>
 </html>
